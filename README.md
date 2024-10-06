@@ -7,7 +7,7 @@
 
 \* Equal contribution  $\dagger$ Corresponding author
 
-https://github.com/user-attachments/assets/9b136765-2089-4859-870f-51853f8ea266
+https://github.com/user-attachments/assets/ee66bd5f-ac48-40d9-a592-f626d2f2b299
 
 # Update
 - **[2024/09/04]** - Our paper has been accepted to CoRL 2024. We will release the code in this repository.
