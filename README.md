@@ -7,9 +7,7 @@
 
 \* Equal contribution  $\dagger$ Corresponding author
 
-<video controls>
-    <source src="assets/demo-kitti.mp4" type="video/mp4">
-</video>
+https://github.com/user-attachments/assets/9b136765-2089-4859-870f-51853f8ea266
 
 # Update
 - **[2024/09/04]** - Our paper has been accepted to CoRL 2024. We will release the code in this repository.
