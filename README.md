@@ -7,11 +7,26 @@
 
 \* Equal contribution  $\dagger$ Corresponding author
 
-https://github.com/user-attachments/assets/ee66bd5f-ac48-40d9-a592-f626d2f2b299
-
 # Update
 - **[2024/09/04]** - Our paper has been accepted to CoRL 2024. We will release the code in this repository.
 - **[2024/07/18]** - We released our paper on [arXiv](https://arxiv.org/abs/2407.07587).
+
+# Demo
+
+### Results on KITTI-MOT dataset:
+![demo](./assets/demo-kitti.gif)
+
+### Results on nuScenes dataset:
+![demo](./assets/demo-nusc.gif)
+
+# Introduction
+
+![intro](./assets/pipeline.png)
+
+- We proposed Let Occ Flow, the first self-supervised method for jointly predicting 3D occupancy and occupancy flow, by integrating 2D optical flow cues into geometry and motion optimization.
+- We designed a novel attention-based temporal fusion module for efficient temporal interaction. Furthermore, we proposed a flow-oriented optimization strategy to mitigate the training instability and sample imbalance problem.
+- We conducted extensive experiments on various datasets with qualitative and quantitative analyses
+to show the competitive performance of our approach.
 
 # Citation
 If this work is helpful for your research, please consider citing the following paper:
