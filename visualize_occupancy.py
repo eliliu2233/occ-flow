@@ -72,7 +72,7 @@ def worker(filename):
         
     for cam in cam_types:
         cam2lidar_r = cam_infos[cam]['sensor2lidar_rotation']
-        cam2lidar_t = cam_infos[cam]['sensor2lidar_translation'] + np.array([-1.0, -12.0, 3.0]) if novel else cam_infos[cam]['sensor2lidar_translation']
+        cam2lidar_t = cam_infos[cam]['sensor2lidar_translation']
         cam_position = (lidar2ego_r @ cam2lidar_t.reshape(-1,1)).reshape(-1) + lidar2ego_t
         f = 0.0055  
         focal_position = (lidar2ego_r @ ((cam2lidar_r @ np.array([0.,0.,f]).reshape(-1,1)).reshape(-1) + cam2lidar_t).reshape(-1,1)).reshape(-1) + lidar2ego_t
@@ -110,7 +110,7 @@ def worker(filename):
         
 if __name__ == '__main__':
     import glob
-    po = Pool(1)
+    po = Pool(10)
     infos = glob.glob(visual_folder+'*.npz')
     pbar = tqdm(total=len(infos))
     pbar.set_description('export occupancy flow')

@@ -72,6 +72,7 @@ python utils/ray_iou_geo/metric_kitti.py --work-dir /path/to/project/ray_iou_out
 python utils/ray_iou_geo/metric.py --work-dir /path/to/project/ray_iou_output/occ_flow
 
 # visualize occupancy and occupancy flow
+python visualize_occupancy_kitti.py
 python visualize_occupancy.py
 
 ```
